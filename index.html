@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Assets/favicon.svg" type="image/x-icon">
     <title>Library App</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo">Logo Ele</div>
+        <div class="add">
+          <span>Add</span>
+          <img src="/Assets/add.svg" alt="Add Book" />
+        </div>
+      </nav>
+      <section>
+        <div class="book-list"></div>
+      </section>
+    </main>
+
+    <dialog id="bookDialog">
+      <form id="bookForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" name="pages" required />
+
+        <label for="isRead">Have you read this book?</label>
+        <input type="checkbox" id="isRead" name="isRead" />
+
+        <button type="submit">Add Book</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </form>
+    </dialog>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

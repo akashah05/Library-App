@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: "Outfit", serif;
+}
+
+nav {
+  background-color: beige;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid brown;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.413);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 2px;
+}
+
+.logo:hover {
+  outline: 1px solid sandybrown;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.logo:active {
+  background-color: rgb(251, 229, 196);
+  outline: none;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.add:hover {
+  outline: 1px solid sandybrown;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.add:active {
+  background-color: rgb(251, 229, 196);
+  outline: none;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.book-box {
+  width: 14rem;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  padding: 0.8rem 0.4rem;
+  border-radius: 1rem;
+  color: blanchedalmond;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-box:hover {
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  width: fit-content;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+
+#bookDialog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid brown;
+}
+
+#bookDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the form */
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#bookForm label {
+    font-weight: bold;
+}
+
+#bookForm input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#bookForm button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#bookForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#bookForm button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+
